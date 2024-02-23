@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Создание и настройка<br> виртуальных машин</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>Виртуальные машины представляют собой средства виртуализации, которые позволяют разработчикам и администраторам работать с несколькими операционными системами на одном физическом компьютере. Виртуализация является важной частью современных систем и позволяет эффективно использовать ресурсы серверов. В этой главе мы рассмотрим, как создавать и настраивать виртуальные машины в операционной системе Linux.</p>
+            <h3>Установка гипервизора</h3>
+            <p>Перед созданием виртуальных машин в Linux необходимо установить гипервизор, который будет управлять их выполнением. В Linux наиболее популярным гипервизором является KVM (Kernel-based Virtual Machine). Для установки KVM выполните следующие шаги:</p>
+            <ol>
+                <li>Убедитесь, что ваш процессор поддерживает виртуализацию. Это можно проверить с помощью команды "<b>grep -Eo '(vmx|svm)' /proc/cpuinfo</b>". Если вывод команды не пустой, то ваш процессор поддерживает виртуализацию.</li>
+                <li>Установите пакеты KVM и QEMU с помощью менеджера пакетов вашего дистрибутива Linux. Например, для Ubuntu командой "<b>sudo apt-get install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils</b>".</li>
+                <li>Убедитесь, что модули ядра KVM загружены. Выполните команду "<b>lsmod | grep kvm</b>", чтобы проверить, загружены ли модули kvm и kvm_intel (или kvm_amd для процессоров AMD).</li>
+            </ol>
+            <h3>Создание виртуальной машины</h3>
+            <p>После установки гипервизора мы можем приступить к созданию виртуальной машины. Для этого выполните следующие шаги:</p>
+            <ol>
+                <li>Определите необходимые ресурсы для вашей виртуальной машины, например, количество процессоров, объем оперативной памяти и размер жесткого диска.</li>
+                <li>Создайте диск для виртуальной машины с помощью команды</li>
+                <p><b>qemu-img create -f qcow2 VM_image.qcow2 10G</b>, где VM_image.qcow2 - имя файла образа диска, а 10G - размер диска.</p>
+                <li>Создайте виртуальную машину с помощью команды</li>
+                <p><b>virt-install --name=VM_name --ram=2048 --vcpus=2 --disk path=VM_image.qcow2,format=qcow2 --network bridge=br0 --graphics vnc --location=iso_file.iso --extra-args 'console=ttyS0'</b>, где VM_name - имя виртуальной машины, 2048 - объем оперативной памяти в мегабайтах, 2 - количество процессоров, VM_image.qcow2 - путь к файлу образа диска, iso_file.iso - путь к ISO-образу операционной системы.</p>
+                <li>Следуйте инструкциям установщика операционной системы для настройки виртуальной машины.</li>
+            </ol>
+            <h3>Настройка виртуальной машины</h3>
+            <p>После создания виртуальной машины вы можете настроить ее параметры для оптимальной работы. Ниже представлены основные настройки, которые можно изменить:</p>
+            <ul>
+                <li><b>RAM</b> (<b>Random Access Memory</b>) - объем оперативной памяти, выделенной для виртуальной машины. Вы можете изменить этот параметр, если требуется больше или меньше памяти.</li>
+                <li><b>vCPUs</b> (<b>Virtual Central Processing Units</b>) - количество виртуальных процессоров. Вы можете увеличить или уменьшить это значение в зависимости от требований вашей виртуальной машины.</li>
+                <li><b>Диск</b> - размер и формат диска, используемого виртуальной машиной. С помощью команды "<b>qemu-img resize VM_image.qcow2 +10G</b>" вы можете увеличить размер диска на 10 ГБ.</li>
+                <li><b>Сеть</b> - настройка сетевого подключения виртуальной машины. Вы можете выбрать между <b>NAT</b> (Network Address Translation), <b>Bridge</b> (мостовое подключение) или <b>Host-only</b> (только доступ к хосту).</li>
+                <li><b>Удаленный доступ</b> - настройка удаленного доступа к виртуальной машине с помощью <b>VNC</b> (Virtual Network Computing). Вы можете указать порт и пароль для доступа.</li>
+            </ul>
+            <h3>Управление виртуальными машинами</h3>
+            <p>После создания и настройки виртуальных машин вы можете управлять ими с помощью утилиты virt-manager или командной строки. Ниже приведены некоторые команды, которые могут пригодиться:</p>
+            <ol>
+                <li>Остановка виртуальной машины:</li>
+                <p><b>virsh shutdown VM_name</b></p>
+                <li>Перезагрузка виртуальной машины:</li>
+                <p><b>virsh reboot VM_name</b></p>
+            </ol>
+            <h3>Удаление виртуальной машины:</h3>
+            <p><b>virsh destroy VM_name</b></p>
+            <p>ИЛИ</p>
+            <p><b>virsh undefine VM_name</b></p>
+            <h3>Подключение к виртуальной машине:</h3>
+            <p><b>virsh console VM_name</b></p>
+            <a href="../linux/theoretical_part18.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+
+
+
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+   <header class="header">
+   
+      <section class="flex">
+   
+       <div class="name">
+           <h3>Настройка безопасности</h3>
+       </div>
+
+         <form action="../search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="toggle-btn" class="fas fa-moon"></div>
+            <div id="menu-btn" class="fas fa-list"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+         </div>
+         
+      </section>
+   
+   </header>  
+
+   <div class="side-bar">
+
+       <div id="close-btn">
+           <i class="fas fa-times"></i>
+       </div>
+
+   <div class="profile">
+      <img src="../images/pic-9.jpg" class="image" alt="">
+      <h3 class="name">имя</h3>
+      <a href="../profile.html" class="btn">профиль</a>
+   </div>
+
+   <nav class="navbar">
+       <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+       <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+       <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+       <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+       <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+       <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+       <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+       <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+       <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+       <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+       <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+       <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+       <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+       <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+       <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+       <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+       <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+       <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+       <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+       <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+    </nav>
+    
+    </div>
+   
+    <section class="theory">
+      <div class="row">
+        <div class="content">
+            <p>В современном информационном обществе безопасность данных является приоритетной задачей. В Linux, эта задача не является исключением. Безопасность операционной системы Linux заключается не только в ограничении неавторизованного доступа к системе, но и в обеспечении конфиденциальности и целостности данных.</p>
+            <p>В данной главе рассмотрим основные механизмы и инструменты, которые позволят настроить безопасность в Linux. Мы изучим, как ограничить доступ к системе, управлять правами доступа к файлам и директориям, настроить межсетевой экран, защитить данные, а также рассмотрим некоторые полезные инструменты для обнаружения и предотвращения атак.</p>
+            <h3>Ограничение доступа к системе</h3>
+            <p>В Linux применяются несколько механизмов для ограничения доступа к системе, включая аутентификацию пользователя и управление привилегиями. Основной механизм аутентификации в Linux – это использование паролей. Для обеспечения безопасности паролей, рекомендуется установить сложные пароли и периодически изменять их. Также можно использовать дополнительные методы аутентификации, такие как ключи SSH или аутентификацию с помощью биометрических данных.</p>
+            <p>Управление привилегиями также играет важную роль в безопасности Linux. Каждый пользователь имеет свой уникальный идентификатор пользователя (<b>UID</b>) и группы-принадлежности (<b>GID</b>), которые используются для управления доступом к файлам и ресурсам системы. Рекомендуется использовать принцип наименьших привилегий (<b>principle of least privilege</b>) и устанавливать минимальные привилегии для пользователей и процессов.</p>
+            <h3>Управление правами доступа к файлам и директориям</h3>
+            <p>Linux использует механизмы прав доступа для контроля доступа к файлам и директориям. У каждого файла и директории есть свои права доступа, которые можно настроить с помощью команды chmod. Права доступа включают в себя три категории: владелец файла, группа-принадлежность и остальные пользователи.</p>
+            <p>Права доступа к файлам и директориям могут быть настроены с помощью команды chmod, указывая режим доступа в виде трех цифр или символов. Также можно использовать атрибуты доступа, такие как <b>suid</b>, <b>sgid</b> и <b>sticky биты</b>, для настройки дополнительной функциональности.</p>
+            <h3>Настройка межсетевого экрана</h3>
+            <p>Межсетевой экран (firewall) является важным компонентом безопасности Linux. Он позволяет контролировать и ограничивать сетевой трафик, что позволяет защитить систему от сетевых атак. В Linux используется инструмент netfilter/iptables для настройки межсетевого экрана.</p>
+            <p>С помощью netfilter/iptables можно создавать правила фильтрации трафика на различных уровнях OSI модели, например, на уровне IP или TCP/UDP портов. Рекомендуется создавать строгие правила фильтрации трафика, разрешая только необходимые порты и протоколы.</p>
+            <h3>Защита данных</h3>
+            <p>Защита данных является важным аспектом безопасности в Linux. Все файлы и данные могут быть защищены с помощью различных механизмов, таких как шифрование, архивация, резервное копирование и контроль целостности.</p>
+            <p>Для шифрования данных в Linux можно использовать инструменты, такие как GnuPG или OpenSSL. Шифрование позволяет защитить данные при хранении или передаче через сеть. Архивация и резервное копирование помогают защитить данные от потери и восстановить их в случае неудачи.</p>
+            <p>Контроль целостности данных можно осуществить с помощью инструментов, таких как Tripwire или AIDE. Они позволяют обнаруживать изменения в файловой системе и проверять целостность файлов.</p>
+            <h3>Обнаружение и предотвращение атак</h3>
+            <p>Linux также предлагает ряд инструментов для обнаружения и предотвращения атак, таких как системные журналы (logs), мониторинг сети, инструменты анализа уязвимостей и системы обнаружения вторжений.</p>
+            <p>Системные журналы записывают информацию о событиях в системе, таких как успешная аутентификация, попытки взлома и другие события. Рекомендуется активировать и настраивать системные журналы для мониторинга активности.</p>
+            <p>Мониторинг сети позволяет отслеживать сетевой трафик и обнаруживать аномальные активности. Рекомендуется использовать инструменты, такие как Snort или Suricata, для обнаружения атак и вредоносного программного обеспечения.</p>
+            <p>Инструменты анализа уязвимостей позволяют обнаружить и устранить уязвимости в системе. Они сканируют систему на предмет известных уязвимостей и рекомендуют соответствующие меры безопасности.</p>
+            <p>Системы обнаружения вторжений мониторят систему на предмет необычной активности и предупреждают о потенциальных атаках. Они могут быть настроены для автоматического реагирования на атаки или предоставления уведомлений администратору.</p>
+            <a href="../linux/theoretical_part11.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+
+      &copy; copyright @ 2024 for <span>iipd</span>
+   
+   </footer>
+   
+   <script src="../js/script.js"></script>
+</body>
+</html>

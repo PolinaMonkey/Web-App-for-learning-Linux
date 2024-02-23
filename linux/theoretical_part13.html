@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+   <header class="header">
+   
+      <section class="flex">
+   
+       <div class="name">
+           <h3>Работа с базами данных</h3>
+       </div>
+
+         <form action="../search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="toggle-btn" class="fas fa-moon"></div>
+            <div id="menu-btn" class="fas fa-list"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+         </div>
+         
+      </section>
+   
+   </header>  
+
+   <div class="side-bar">
+
+       <div id="close-btn">
+           <i class="fas fa-times"></i>
+       </div>
+
+   <div class="profile">
+      <img src="../images/pic-9.jpg" class="image" alt="">
+      <h3 class="name">имя</h3>
+      <a href="../profile.html" class="btn">профиль</a>
+   </div>
+
+   <nav class="navbar">
+       <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+       <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+       <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+       <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+       <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+       <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+       <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+       <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+       <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+       <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+       <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+       <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+       <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+       <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+       <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+       <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+       <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+       <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+       <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+       <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+    </nav>
+    
+    </div>
+   
+    <section class="theory">
+      <div class="row">
+        <div class="content">
+            <p>Базы данных (БД) являются важной частью современных информационных систем. Они используются для хранения и управления большим объемом структурированных данных, которые могут быть легко доступны и обработаны.</p>
+            <p>Linux - популярная операционная система, которая широко используется в мире IT. Она предлагает множество инструментов для работы с базами данных, позволяя эффективно управлять данными и обеспечивать их целостность и доступность.</p>
+            <p>В этой главе мы рассмотрим различные аспекты работы с базами данных в Linux, начиная с установки и настройки, а затем переходя к созданию и управлению базами данных, выполнению запросов и обеспечению их безопасности.</p>
+            <h3>Установка и настройка базы данных</h3>
+            <p>Прежде чем мы начнем работу с базами данных в Linux, нам необходимо установить и настроить соответствующую систему управления базами данных (СУБД).</p>
+            <p>Среди наиболее популярных СУБД для Linux можно выделить следующие:</p>
+            <ul>
+                <li><b>MySQL</b>: открытая реляционная СУБД с акцентом на производительность и надежность.</li>
+                <li><b>PostgreSQL</b>: мощная реляционная СУБД с поддержкой широкого спектра функциональных возможностей.</li>
+                <li><b>MongoDB</b>: документоориентированная NoSQL СУБД, обладающая высокой масштабируемостью и гибкостью.</li>
+            </ul>
+            <p>Для установки и настройки СУБД в Linux, вам потребуются права администратора и доступ к пакетному менеджеру вашей системы (например, apt, yum, pacman).</p>
+            <h3>Создание и управление базами данных</h3>
+            <p>После успешной установки СУБД мы можем приступить к созданию и управлению базами данных.</p>
+            <p>Для создания базы данных в Linux мы должны использовать команду или интерфейс командной строки, предоставляемый соответствующей СУБД.</p>
+            <p>Например, для создания базы данных MySQL мы можем использовать следующую команду:</p>
+            <p><b>mysql -u root -p</b><br><b>CREATE DATABASE database_name;</b></p>
+            <p>Аналогично, для создания базы данных PostgreSQL мы можем использовать следующую команду:</p>
+            <p><b>sudo -u postgres createdb database_name</b></p>
+            <h3>Выполнение запросов к базе данных</h3>
+            <p>После создания базы данных мы можем выполнять запросы к ней для получения нужных данных или производства изменений.</p>
+            <p>Есть несколько способов выполнения запросов к базам данных в Linux.</p>
+            <p>Один из наиболее распространенных способов - использование SQL (Structured Query Language), языка программирования для работы с реляционными базами данных. SQL позволяет создавать, изменять и удалять данные в таблицах базы данных.</p>
+            <p>Чтобы выполнить SQL-запрос, мы можем использовать команду командной строки для соответствующей СУБД, например:</p>
+            <p><b>mysql -u username -p -D database_name -e "SELECT * FROM table_name"</b></p>
+            <h3>Обеспечение безопасности базы данных</h3>
+            <p>Безопасность базы данных играет важную роль в защите данных от несанкционированного доступа и повреждения. В Linux существует несколько механизмов, которые помогают обеспечить безопасность базы данных.</p>
+            <p>Один из таких механизмов - это конфигурация доступа к базе данных. Мы можем настроить различные уровни доступа для разных пользователей и ролей, чтобы ограничить доступ к конкретным таблицам или запросам.</p>
+            <p>Кроме того, мы также можем использовать шифрование данных, чтобы защитить их от прослушивания или восстановления при несанкционированном доступе.</p>
+            <a href="../linux/theoretical_part14.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+
+      &copy; copyright @ 2024 for <span>iipd</span>
+   
+   </footer>
+   
+   <script src="../js/script.js"></script>
+</body>
+</html>

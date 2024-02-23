@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+   <header class="header">
+   
+      <section class="flex">
+   
+       <div class="name">
+           <h3>Установка и настройка</h3>
+       </div>
+
+         <form action="../search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="toggle-btn" class="fas fa-moon"></div>
+            <div id="menu-btn" class="fas fa-list"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+         </div>
+         
+      </section>
+   
+   </header>  
+
+   <div class="side-bar">
+
+       <div id="close-btn">
+           <i class="fas fa-times"></i>
+       </div>
+
+   <div class="profile">
+      <img src="../images/pic-9.jpg" class="image" alt="">
+      <h3 class="name">имя</h3>
+      <a href="../profile.html" class="btn">профиль</a>
+   </div>
+
+   <nav class="navbar">
+       <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+       <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+       <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+       <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+       <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+       <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+       <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+       <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+       <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+       <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+       <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+       <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+       <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+       <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+       <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+       <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+       <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+       <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+       <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+       <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+    </nav>
+    
+    </div>
+   
+    <section class="theory">
+      <div class="row">
+        <div class="content">
+            <p>Linux является открытой операционной системой, которая доступна для всех пользователей бесплатно. Установка Linux на компьютер предоставляет множество преимуществ, таких как безопасность, стабильность и возможность настройки операционной системы согласно вашим потребностям. В этой главе мы рассмотрим процесс установки Linux и основные шаги настройки системы.</p>
+            <h3>Выбор дистрибутива Linux</h3>
+            <p>Первым шагом в установке Linux является выбор подходящего дистрибутива. Дистрибутив - это версия Linux, которая интегрирует ядро Linux с дополнительным программным обеспечением и интерфейсом пользователя. На данный момент есть множество популярных дистрибутивов, таких как Ubuntu, Fedora, Debian и другие. Вам следует выбирать дистрибутив в зависимости от ваших потребностей, опыта и предпочтений.</p>
+            <h3>Подготовка к установке</h3>
+            <p>Перед установкой Linux важно подготовить компьютер. Во-первых, необходимо создать резервную копию всех важных данных, которые хранятся на вашем компьютере. Это позволит вам избежать потери данных в случае возникновения проблем в процессе установки. Далее, вам нужно загрузить образ дистрибутива Linux и записать его на USB-флешку или DVD-диск с помощью специальной программы записи образов, такой как Rufus или Etcher. После этого вы должны проверить, что ваш компьютер отвечает минимальным системным требованиям выбранного дистрибутива Linux.</p>
+            <h3>Установка Linux</h3>
+            <p>Окончив подготовительные операции, вы можете приступить к установке Linux. Для этого вам нужно вставить USB-флешку или DVD-диск с образом дистрибутива Linux в компьютер и перезагрузить систему. При загрузке появится меню, где вы можете выбрать "Установка Linux" или подобный вариант. Затем следуйте инструкциям на экране, чтобы завершить процесс установки. Выберите язык, раскладку клавиатуры, часовой пояс и создайте учетную запись пользователя.</p>
+            <h3>Настройка системы</h3>
+            <p>По завершении установки Linux вам предлагается настроить темы, внешний вид и другие параметры системы. Вы можете выбрать предустановленные темы или установить собственные. Кроме того, стоит проверить установленные драйверы и обновить их при необходимости. Также доступна возможность настройки сети, установки софта и настройки безопасности системы.</p>
+            <h3>Обновление и установка программного обеспечения</h3>
+            <p>После установки Linux рекомендуется обновить операционную систему до последней версии. Это позволит вам получить все новейшие исправления и функции. Для обновления Linux вы можете использовать встроенный в систему менеджер обновлений или команду "sudo apt update" (для дистрибутивов на базе Debian) или аналогичную команду для других дистрибутивов. Кроме того, у вас будет доступ к множеству программного обеспечения, которое можно устанавливать через менеджер приложений или из исходных кодов.</p>
+            <a href="../linux/theoretical_part3.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+
+      &copy; copyright @ 2024 for <span>iipd</span>
+   
+   </footer>
+   
+   <script src="../js/script.js"></script>
+</body>
+</html>

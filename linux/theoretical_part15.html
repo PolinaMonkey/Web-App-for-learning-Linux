@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Оптимизация и отладка системы</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>Операционная система Linux дает пользователю гибкость и полный контроль над системой, но в то же время требует определенных знаний и умений для эффективной работы. В этой главе мы рассмотрим методы оптимизации и отладки системы в Linux.</p>
+            <h3>Измерение производительности</h3>
+            <p>Перед тем как начать оптимизацию системы, важно измерить ее производительность и выявить проблемные области. Для этого в Linux есть несколько инструментов:</p>
+            <ul>
+                <li><b>top</b> - команда для отображения текущей загрузки системы и использования ресурсов процессора, памяти и диска.</li>
+                <li><b>vmstat</b> - команда для мониторинга активности системы, включая использование памяти, процессора и ввод-вывода.</li>
+                <li><b>iostat</b>- команда для мониторинга использования дисковой подсистемы, включая среднюю загрузку, скорость передачи данных и среднее время ответа.</li>
+                <li><b>sar</b> - команда для сбора и анализа системной статистики, включая загрузку процессора, памяти и сети.</li>
+            </ul>
+            <h3>Оптимизация производительности</h3>
+            <p>После того как были установлены проблемные области системы, можно приступить к оптимизации производительности. Вот несколько основных аспектов оптимизации в Linux:</p>
+            <ol>
+                <li><b>Оптимизация ядра</b>: настройка параметров ядра операционной системы позволяет улучшить производительность и управление ресурсами. Некоторые параметры, которые можно настроить, включают размер кэша памяти, настройки планировщика процессора и т. д.</li>
+                <li><b>Оптимизация дисковой подсистемы</b>: настройка параметров файловой системы, использование RAID-массивов и SSD-накопителей, а также использование технологий кэширования, таких как LVM или dm-cache, позволяют повысить скорость работы с дисками и улучшить производительность.</li>
+                <li><b>Оптимизация сети</b>: настройка параметров сети, таких как размер буфера сокета, MTU и настройки TCP/IP, позволяет улучшить производительность сети и снизить задержку.</li>
+                <li><b>Оптимизация приложений</b>: проверка приложений на утечки памяти, оптимизация алгоритмов и использование многопоточности и многопроцессорного программирования позволяют улучшить производительность приложений.</li>
+            </ol>
+            <h3>Отладка системы</h3>
+            <p>мы в Linux может понадобиться для выявления и исправления ошибок, сбоев и неисправностей. Вот несколько инструментов и методов отладки системы:</p>
+            <ul>
+                <li><b>dmesg</b> - команда для просмотра содержимого системного журнала. Он может показать сообщения об ошибках, сбоях и предупреждениях, которые могут помочь в идентификации проблемы.</li>
+                <li><b>strace</b> - инструмент для отслеживания системных вызовов и сигналов, которые выполняются при выполнении программы. Он может помочь выявить утечки ресурсов, ошибки ввода-вывода и другие проблемы.</li>
+                <li><b>gdb</b> - отладчик для программы, позволяющий выполнить пошаговое выполнение, установить точки останова и анализировать стек вызовов во время выполнения программы.</li>
+                <li><b>tcpdump</b> - инструмент для сниффинга сетевых пакетов и анализа их содержимого. Он может быть полезен для отладки сетевых проблем, таких как неправильная настройка сети или проблемы с протоколами.</li>
+            </ul>
+            <h3>Мониторинг системы</h3>
+            <p>Мониторинг системы в Linux позволяет отслеживать ее состояние и производительность в реальном времени. Некоторые из популярных инструментов мониторинга в Linux:</p>
+            <ul>
+                <li><b>Nagios</b> - инструмент мониторинга, который позволяет отслеживать различные параметры системы, включая нагрузку, доступность сети и сервисов.</li>
+                <li><b>Zabbix</b> - система мониторинга и управления сетью, которая предлагает широкий набор функций, включая отслеживание производительности и событий, визуализацию данных и уведомления.</li>
+                <li><b>Munin</b> - инструмент мониторинга, который предоставляет графическое представление данных о производительности системы, таких как использование процессора, памяти, диска и сети.</li>
+                <li><b>Prometheus</b> - система мониторинга и оповещения с открытыми исходными кодами, которая предоставляет мощные возможности для сбора, анализа и визуализации данных мониторинга.</li>
+            </ul>
+            <a href="../linux/theoretical_part16.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>

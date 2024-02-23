@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Введение в программирование<br> под Linux</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>Linux является одной из наиболее популярных операционных систем, используемых разработчиками и инженерами для создания различных программных продуктов. В этой главе мы рассмотрим основные аспекты программирования под Linux, включая среду разработки, некоторые ключевые инструменты и API, а также нюансы, специфичные для данной операционной системы.</p>
+            <h3>Среда разработки под Linux</h3>
+            <p>Под Linux существует множество интегрированных сред разработки (<b>IDE</b>), которые облегчают процесс написания кода, отладки и сборки. Некоторые из самых популярных IDE для Linux включают в себя:</p>
+            <ul>
+                <li><b>Eclipse</b>>: мощное и гибкое IDE, позволяющее разрабатывать программы на различных языках программирования, включая C/C++ и Java.</li>
+                <li><b>IntelliJ IDEA</b>>: популярное IDE для разработки программного обеспечения на Java.</li>
+                <li><b>Visual Studio Code</b>>: легковесный и гибкий редактор кода, поддерживающий множество языков программирования и расширений.</li>
+                <li><b>Code::Blocks</b>: бесплатная, открытая и расширяемая среда разработки для C/C++.</li>
+            </ul>
+            <h3>Компиляция и сборка программ под Linux</h3>
+            <p>При разработке программного обеспечения под Linux, одним из основных этапов является компиляция и сборка программного кода. Наиболее распространенным компилятором под Linux является GNU Compiler Collection (GCC), который поддерживает множество языков программирования, включая C, C++, Java и другие.</p>
+            <p>Для компиляции программ на C/C++ с использованием GCC, необходимо выполнить следующие шаги:</p>
+            <ol>
+                <li>Написать исходный код программы в файле с расширением .c (для программ на C) или .cpp (для программ на C++).</li>
+                <li>Открыть терминал и перейти в каталог, содержащий файл с исходным кодом.</li>
+                <li>Выполнить команду компиляции, указав имя файла с исходным кодом и желаемое имя исполняемого файла. Например:</li>
+                <p><b>gcc -o my_program my_program.c</b></p>
+                <p>После успешной компиляции, будет создан исполняемый файл с указанным именем (в данном случае my_program). Для его запуска, введите следующую команду в терминале:</p>
+                <p><b>./my_program</b></p>
+            </ol>
+            <h3>Основные API под Linux</h3>
+            <p>Linux предоставляет различные API для разработки программного обеспечения на различных языках программирования. Некоторые из основных API включают в себя:</p>
+            <ul>
+                <li><b>POSIX API</b>>: стандартное API для разработки программ под Unix-подобными операционными системами, включая Linux. Он предоставляет множество функций для работы с файлами, процессами, сетью и другими базовыми операциями.</li>
+                <li><b>GNU C Library (glibc)</b>>: библиотека C, которая расширяет стандартное C API, добавляя дополнительные функции, такие как работа с сокетами, потоками и многопоточностью.</li>
+                <li><b>X Window System</b>>: основная графическая система под Linux, предоставляющая API для создания графических интерфейсов пользователя (GUI). Главная библиотека X11 (libX11) предоставляет функции для работы с окнами, графикой и другими элементами GUI.</li>
+                <li><b>ALSA API</b>: аудио-система Linux, предоставляющая API для работы с аудиоустройствами, записи и воспроизведения звука.</li>
+            </ul>
+            <h3>Нюансы программирования под Linux</h3>
+            <p><b>Права доступа к файлам и папкам</b>: Linux имеет строгую систему прав доступа к файлам и папкам. При разработке программ, убедитесь, что вы имеете достаточные права доступа для чтения, записи и исполнения файлов и папок, с которыми вы работаете.</p>
+            <p><b>Сигналы</b>: в Linux существуют сигналы, которые могут быть отправлены процессам для указания определенных действий. Некоторые из наиболее распространенных сигналов включают SIGINT (отправляется при нажатии Ctrl+C), SIGTERM (отправляется для запроса завершения процесса) и другие.</p>
+            <p><b>Многопоточность</b>: Linux поддерживает многопоточность, что позволяет создавать множество параллельных потоков выполнения. При разработке программ, учтите потенциальные проблемы синхронизации и безопасности при работе с общими ресурсами.</p>
+            <a href="../linux/theoretical_part19.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+
+
+
+
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>

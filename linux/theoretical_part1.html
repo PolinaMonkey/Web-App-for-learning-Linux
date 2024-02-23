@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Введение в Linux</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+ 
+    </div>
+
+    <section class="theory">
+      <div class="row">
+        <div class="content">
+            <h3>Что такое Linux</h3>
+            <p>Linux – это операционная система, построенная на ядре Linux. Она является открытым исходным кодом и доступна для бесплатного использования и распространения. Linux предоставляет пользователю высокую степень гибкости и настраиваемости, что делает ее специально подходящей для широкого круга применений, включая серверы, рабочие станции и встроенные системы.</p>
+            <h3>История Linux</h3>
+            <p>История Linux началась в 1991 году, когда финский студент Линус Торвальдс начал разрабатывать ядро для своей персональной системы. Линус решил выпустить свой код как «Open Source» (открытый исходный код), чтобы другие люди могли присоединиться к разработке и вносить свои вклады. Это привело к формированию глобального сообщества разработчиков, которые сотрудничали для улучшения и расширения функциональности Linux.</p>
+            <h3>Основные преимущества Linux</h3>
+            <ul>
+                <li>Бесплатность: Linux доступен для свободного скачивания и использования. Это делает его очень доступным для пользователей с различными финансовыми возможностями.</li>
+                <li>Открытый исходный код: Linux основан на открытом исходном коде, что означает, что любой может просмотреть, изменить и распространять его. Это способствует инновациям и обеспечивает безопасность путем обнаружения и устранения уязвимостей.</li>
+                <li>Гибкость и настраиваемость: Linux позволяет пользователям полностью настраивать и адаптировать систему под свои потребности. Вы можете выбирать из различных дистрибутивов Linux, каждый из которых предлагает свои уникальные функции и конфигурации.</li>
+                <li>Высокая степень безопасности: Linux известен своей надежностью и безопасностью. Открытый исходный код позволяет быстро исправлять уязвимости и предотвращать атаки.</li>
+                <li>Широкая поддержка: Сообщество разработчиков Linux активно поддерживает операционную систему и предлагает обширную библиотеку программного обеспечения, инструментов и приложений.</li>
+            </ul>
+            <h3>Дистрибутивы Linux</h3>
+            <p>Linux представлен в форме различных дистрибутивов, которые предлагают различные комбинации программного обеспечения и конфигураций для удовлетворения разных потребностей пользователей. Некоторые из самых популярных дистрибутивов Linux включают Ubuntu, Fedora и Debian.</p>
+            <h3>Основные компоненты Linux</h3>
+            <ul>
+                <li>Ядро Linux: Ядро является основной частью операционной системы Linux. Оно предоставляет интерфейс между программным обеспечением и аппаратным обеспечением компьютера, управляет ресурсами системы и обеспечивает взаимодействие с внешними устройствами.</li>
+                <li>Оболочка командной строки: Оболочка является интерфейсом между пользователем и операционной системой. Она позволяет пользователю взаимодействовать с системой, выполнять команды, запускать скрипты и управлять файлами и каталогами.</li>
+                <li>Графический интерфейс пользователя (GUI): Некоторые дистрибутивы Linux предлагают графический интерфейс пользователя, который облегчает взаимодействие с системой через графические элементы, такие как окна, кнопки и меню.</li>
+                <li>Утилиты командной строки: Linux предлагает широкий набор утилит командной строки для выполнения различных задач, от управления файлами и процессами до настройки системы и сетевого взаимодействия.</li>
+            </ul>
+            <h3>Общие команды Linux</h3>
+            <ul>
+                <li><b>cd</b>: смена текущего рабочего каталога</li>
+                <li><b>ls</b>: просмотр содержимого каталога</li>
+                <li><b>cp</b>: копирование файлов и каталогов</li>
+                <li><b>mv</b>: перемещение и переименование файлов и каталогов</li>
+                <li><b>rm</b>: удаление файлов и каталогов</li>
+                <li><b>mkdir</b>: создание нового каталога</li>
+                <li><b>grep</b>: поиск текста в файле</li>
+                <li><b>chmod</b>: изменение прав доступа к файлам и каталогам</li>
+                <li><b>shutdown</b>: выполнять команды с правами администратора</li>
+                <li><b>apt-get</b> (или <b>yum</b>): установка и обновление программного обеспечения</li>
+            </ul>
+            <a href="../linux/theoretical_part2.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+
+   <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+   </footer>
+     
+     <script src="../js/script.js"></script>
+
+</body>
+</html>

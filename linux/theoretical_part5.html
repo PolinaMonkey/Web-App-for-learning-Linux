@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Управление пользователями<br> и правами доступа</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>Управление пользователями и правами доступа является одной из важных задач в Linux. В этой главе мы рассмотрим основные аспекты управления пользователями, создания учетных записей, назначения прав доступа и управления группами пользователей. Мы также рассмотрим инструменты и команды, используемые для выполнения этих задач.</p>
+            <h3>Учетные записи пользователей</h3>
+            <p>Каждый пользователь в Linux имеет свою учетную запись, которая содержит информацию о пользователе, такую как имя пользователя, домашний каталог, идентификатор пользователя (UID) и другие связанные с ним значения. Учетная запись пользователя также может быть связана с группами пользователей.</p>
+            <ol>
+                <li>Создание учетных записей пользователей</li>
+                <p>Для создания учетной записи пользователя в Linux используется команда "<b>useradd</b>". Например, чтобы создать нового пользователя с именем "user1", можно выполнить следующую команду:</p>
+                <p><b>sudo useradd user1</b></p>
+                <p>Эта команда создаст учетную запись пользователя "<b>user1</b>" с использованием настроек по умолчанию, включая домашний каталог пользователя и идентификатор пользователя. Однако, для более подробной настройки учетной записи пользователя, можно использовать различные опции команды "useradd".</p>
+                <li>Изменение учетных записей пользователей</li>
+                <p>Для изменения существующих учетных записей пользователей в Linux используется команда "<b>usermod</b>". Например, чтобы изменить имя пользователя "user1" на "user2", можно выполнить следующую команду:</p>
+                <p><b>sudo usermod -l user2 user1</b></p>
+                <p>Эта команда изменит имя пользователя "user1" на "user2". Аналогично, можно использовать различные опции команды "usermod" для изменения других параметров учетной записи пользователя.</p>
+                <li>Удаление учетных записей пользователей</li>
+                <p>Для удаления учетной записи пользователя в Linux используется команда "<b>userdel</b>". Например, чтобы удалить пользователя "user1", можно выполнить следующую команду:</p>
+                <p><b>sudo userdel user1</b></p>
+                <p>Эта команда удалит учетную запись пользователя "user1". Однако, она не удалит файлы и директории, связанные с этим пользователем. Для удаления всех файлов и директорий пользователя также можно использовать опцию "-r" команды "userdel".</p>
+            </ol>
+            <h3>Управление группами пользователей</h3>
+            <p>Группы пользователей позволяют объединять пользователей для более удобного назначения прав доступа. В Linux каждый пользователь может находиться в одной или нескольких группах.
+            <ol>
+                <li>Создание групп пользователей</li>
+                <p>Для создания группы пользователей в Linux используется команда "<b>groupadd</b>". Например, чтобы создать новую группу с именем "group1", можно выполнить следующую команду:</p>
+                <p><b>sudo groupadd group1</b></p>
+                <p>Эта команда создаст новую группу с именем "group1". Как и с учетными записями пользователей, можно использовать различные опции команды "groupadd" для настройки создаваемой группы.</p>
+                <li>Изменение групп пользователей</li>
+                <p>Для изменения существующих групп пользователей в Linux используется команда "<b>groupmod</b>". Например, чтобы изменить имя группы "group1" на "group2", можно выполнить следующую команду:</p>
+                <p><b>sudo groupmod -n group2 group1</b></p>
+                <p>Эта команда изменит имя группы "group1" на "group2". Как и с учетными записями пользователей, можно использовать различные опции команды "groupmod" для изменения других параметров группы.</p>
+                <li>Удаление групп пользователей</li>
+                <p>Для удаления группы пользователей в Linux используется команда "<b>groupdel</b>". Например, чтобы удалить группу "group1", можно выполнить следующую команду:</p>
+                <p><b>sudo groupdel group1</b></p>
+                <p>Эта команда удалит группу "group1" и удалит все ссылки на эту группу из учетных записей пользователей.</p>
+            </ol>
+            <h3>Назначение прав доступа</h3>
+            <p>Linux имеет гибкую систему прав доступа, которая позволяет устанавливать различные уровни доступа к файлам и директориям. Права доступа состоят из трех основных категорий: владелец, группа и другие пользователи.</p>
+            <ol>
+                <li>Права доступа к файлам и директориям</li>
+                <p>Права доступа в Linux представлены в виде набора буквенных и числовых значений. Буквенные значения представляют базовые права доступа: чтение (r), запись (w) и выполнение (x). Числовые значения представляются трехзначными числами, которые представляют сумму базовых прав доступа (например, 750).</p>
+                <ul>
+                    <li>Чтение (<b>r</b>) позволяет просматривать содержимое файла или директории.</li>
+                    <li>Запись (<b>w</b>) позволяет создавать, изменять или удалять файлы и директории.</li>
+                    <li>Выполнение (<b>x</b>) позволяет выполнять файлы или входить в директории.</li>
+                </ul>
+                <li>Изменение прав доступа</li>
+                <p>Для изменения прав доступа к файлам и директориям в Linux используется команда "<b>chmod</b>". Например, чтобы установить права доступа 755 для файла "file1.txt", можно выполнить следующую команду:</p>
+                <p><b>sudo chmod 755 file1.txt</b></p>
+                <p>Эта команда установит права доступа на чтение, запись и выполнение для владельца файла (7), чтение и выполнение для группы (5) и чтение и выполнение для других пользователей (5).</p>
+                <a href="../linux/theoretical_part6.html" input type="inline-btn" class="btn">Далее</a>
+                <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+                <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+            </div>
+    </div>
+    </section>
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>

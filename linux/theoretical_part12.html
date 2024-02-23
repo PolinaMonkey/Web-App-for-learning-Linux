@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Конфигурация и настройка<br> серверных служб</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>Файлы В современных информационных системах серверные службы играют важную роль в обеспечении доступности и функциональности различных приложений и сервисов. Linux является одной из самых популярных платформ для хостинга и развертывания серверных служб, благодаря своей надежности, гибкости и богатому набору инструментов для конфигурации и настройки.</p>
+            <p>В этой главе мы рассмотрим основные принципы и методы конфигурации и настройки серверных служб в Linux. Мы начнем с обзора различных инструментов и файлов конфигурации, используемых для настройки серверных служб, а затем перейдем к практическим примерам настройки некоторых популярных серверных служб.</p>
+            <h3>Обзор инструментов конфигурации и настройки</h3>
+            <p>Конфигурация серверных служб в Linux осуществляется с использованием различных инструментов и файлов конфигурации. Некоторые из основных инструментов включают:</p>
+            <ol>
+                <li>Конфигурации (как примеры, могут быть использованы файлы "<b>/etc/nginx/nginx.conf</b>" для настройки веб-сервера <b>Nginx</b> или "<b>/etc/ssh/sshd_config</b>" для настройки сервера <b>SSH</b>). В этих файлах определяются основные параметры и настройки службы.</li>
+                <li>Утилиты командной строки, такие как <b>systemctl</b>, <b>service</b>, <b>chkconfig</b> и другие. Они позволяют управлять службами, запускать и останавливать их, а также настраивать различные параметры.</li>
+                <li>Графические инструменты, такие как <b>Webmin</b>, <b>CPanel</b> и другие. Эти инструменты предоставляют удобный пользовательский интерфейс для настройки серверных служб, что упрощает процесс для неопытных пользователей.</li>
+            </ol>
+            <h3>Примеры настройки серверных служб</h3>
+            <ul>
+                <li>Настройка веб-сервера <b>Nginx</b>:</li>
+                <p><b>Nginx</b> – это популярный веб-сервер, широко используемый для хостинга веб-приложений и статических файлов. Для настройки Nginx мы можем использовать файл "/etc/nginx/nginx.conf". В этом файле можно задать основные параметры сервера, такие как порт прослушивания, местоположение файлов журналов, параметры безопасности и другие. После внесения изменений в файл конфигурации Nginx, необходимо перезапустить службу для применения изменений.</p>
+                <li>Настройка сервера баз данных <b>MySQL</b>:</li>
+                <p><b>MySQL</b> – это популярная система управления базами данных, которая широко используется в различных веб-приложениях. Для настройки MySQL мы можем использовать файл "/etc/my.cnf". В этом файле можно задать параметры доступа к базе данных, настройки безопасности, параметры производительности и другие. После внесения изменений в файл конфигурации MySQL, необходимо перезапустить службу для применения изменений.</p>
+                <li>Настройка сервера <b>SSH</b>:</li>
+                <p><b>SSH</b> (Secure Shell) обеспечивает защищенное удаленное управление и передачу данных между компьютерами. Для настройки сервера SSH мы можем использовать файл "/etc/ssh/sshd_config". В этом файле можно задать параметры аутентификации, доступа и шифрования. После внесения изменений в файл конфигурации SSH, необходимо перезапустить службу для применения изменений.</p>
+            </ul>
+            <a href="../linux/theoretical_part13.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+
+
+
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>register</title>
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+   <header class="header">
+   
+      <section class="flex">
+   
+         <form action="search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="toggle-btn" class="fas fa-moon"></div>
+            <div id="menu-btn" class="fas fa-bars"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+         </div>
+         
+      </section>
+   
+   </header>  
+
+<div class="side-bar">
+
+   <div id="close-btn">
+      <i class="fas fa-times"></i>
+   </div>
+
+   <div class="profile">
+      <img src="images/pic-9.jpg" class="image" alt="">
+      <h3 class="name">гость</h3>
+      <a href="profile.html" class="btn">профиль</a>
+   </div>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fas fa-home"></i><span>основная</span></a>
+      <a href="home.html#course"><i class="fas fa-book"></i><span>курсы</span></a>
+      <a href="settings.html"><i class="fas fa-gear"></i><span>настройки</span></a>
+   </nav>
+
+</div>
+
+<section class="form-container">
+
+   <form action="" method="post" enctype="multipart/form-data">
+      <h3>Создать аккаунт</h3>
+      <p>Имя: <span>*</span></p>
+      <input type="text" name="name" placeholder="Введите ваше имя" required maxlength="50" class="box">
+      <p>Email: <span>*</span></p>
+      <input type="email" name="email" placeholder="Введите ваш email" required maxlength="50" class="box">
+      <p>Добавить фото профиля:  <span>*</span></p>
+      <input type="file" accept="image/*" required class="box">
+      <a href="register_psswd.html" input type="submit" value="Далее" name="submit" class="btn">Далее</a>
+      <a href="login.html"><i class="fas fa-register">Есть акканут?</i></a>
+   </form>
+
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="footer">
+
+   &copy; copyright @ 2024 for <span>iipd</span>
+
+</footer>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

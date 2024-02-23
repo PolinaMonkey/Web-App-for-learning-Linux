@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Работа с облаком и виртуализацией</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>В современном мире все чаще используется облачные ресурсы и технологии виртуализации. Облачные сервисы предоставляют удобные и гибкие решения для хранения данных, запуска приложений и обеспечения доступа к информации. Виртуализация, в свою очередь, позволяет эффективно использовать аппаратные ресурсы серверов и управлять ими.</p>
+            <p>В этой главе мы рассмотрим основные аспекты работы с облаком и виртуализацией в операционной системе Linux.</p>
+            <h3>Облачные сервисы</h3>
+            <p>Облачные сервисы можно классифицировать на несколько основных типов:</p>
+            <ul>
+                <li><b>IaaS</b> (<b>Infrastructure-as-a-Service</b>) предоставляет базовую инфраструктуру для хранения данных и запуска виртуальных машин. Внутри облачной инфраструктуры пользователь может управлять виртуальными машинами, сетями, хранилищем данных и другими ресурсами.</li>
+                <li><b>PaaS</b> (<b>Platform-as-a-Service</b>) предоставляет готовую платформу для разработки и развертывания приложений. Пользователь может использовать предустановленные инструменты и фреймворки для разработки своих приложений без необходимости управления самой инфраструктурой.</li>
+                <li><b>SaaS</b> (<b>Software-as-a-Service</b>) предоставляет готовые приложения и сервисы, доступные через интернет. Пользователь может использовать эти приложения без необходимости устанавливать и настраивать их на своем компьютере.</li>
+            </ul>
+            <h3>Основы виртуализации</h3>
+            <p>Виртуализация позволяет создавать виртуальные версии физических ресурсов, таких как процессоры, память и сеть. Это позволяет эффективно использовать аппаратные ресурсы серверов и запускать несколько виртуальных машин на одном сервере.</p>
+            <p>Основными технологиями виртуализации в операционной системе Linux являются:</p>
+            <ul>
+                <li><b>KVM</b> (<b>Kernel-based Virtual Machine</b>) – это модуль ядра Linux, позволяющий запускать виртуальные машины на базе Linux. KVM поддерживает различные гостевые операционные системы, такие как Linux, Windows, macOS и др.</li>
+                <li><b>LXC</b> (<b>Linux Containers</b>) – это легковесная виртуализация на уровне операционной системы. LXC позволяет запускать несколько изолированных контейнеров на одном хосте, каждый из которых имеет свою собственную файловую систему, пользователей и сетевые интерфейсы.</li>
+            </ul>
+            <p>Кроме того, существуют и другие технологии виртуализации в Linux, такие как Xen, VirtualBox и др.</p>
+            <h3>Управление виртуальными машинами</h3>
+            <p>Для работы с виртуальными машинами в Linux существует несколько популярных инструментов:</p>
+            <ul>
+                <li><b>Virt-manager</b> - графический инструмент для управления виртуальными машинами на базе KVM. Virt-manager позволяет создавать, настраивать и запускать виртуальные машины, а также управлять их состоянием.</li>
+                <li><b>QEMU</b> - эмулятор аппаратных ресурсов, используемый вместе с KVM для запуска виртуальных машин. QEMU позволяет эмулировать различные типы процессоров, включая x86, ARM и MIPS.</li>
+                <li><b>Docker</b> - платформа для разработки, упаковки и запуска приложений в контейнерах. Docker использует технологию контейнеризации LXC для обеспечения изоляции и безопасности приложений.</li>
+            </ul>
+            <h3>Практические примеры использования облака и виртуализации в Linux</h3>
+            <ol>
+                <li><b>Запуск web-сервера</b>: с использованием облачной платформы, такой как AWS или Google Cloud, можно быстро развернуть веб-сервер и обеспечить доступ к вашему сайту из любой точки мира.</li>
+                <li><b>Тестирование приложений</b>: с использованием виртуализации вы можете создать несколько экземпляров виртуальной машины с различными конфигурациями для тестирования вашего приложения под различными условияРезервное копирование данных: облачные сервисы предоставляют удобные и безопасные способы резервного копирования ваших данных и обеспечения их доступности в случае сбоя системы.</li>
+            </li>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>
