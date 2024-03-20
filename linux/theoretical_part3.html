@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+   <header class="header">
+   
+      <section class="flex">
+   
+       <div class="name">
+           <h3>Командная строка <br>и основные команды</h3>
+       </div>
+
+         <form action="../search.html" method="post" class="search-form">
+            <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+            <button type="submit" class="fas fa-search"></button>
+         </form>
+   
+         <div class="icons">
+            <div id="toggle-btn" class="fas fa-moon"></div>
+            <div id="menu-btn" class="fas fa-list"></div>
+            <div id="search-btn" class="fas fa-search"></div>
+         </div>
+         
+      </section>
+   
+   </header>  
+
+   <div class="side-bar">
+
+       <div id="close-btn">
+           <i class="fas fa-times"></i>
+       </div>
+
+   <div class="profile">
+      <img src="../images/pic-9.jpg" class="image" alt="">
+      <h3 class="name">имя</h3>
+      <a href="../profile.html" class="btn">профиль</a>
+   </div>
+
+   <nav class="navbar">
+       <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+       <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+       <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+       <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+       <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+       <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+       <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+       <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+       <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+       <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+       <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+       <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+       <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+       <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+       <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+       <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+       <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+       <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+       <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+       <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+    </nav>
+          
+   </div>
+
+   <section class="theory">
+      <div class="row">
+        <div class="content">
+            <p>Командная строка – это интерфейс взаимодействия с операционной системой, который позволяет пользователям выполнять различные операции и управлять компьютером с помощью текстовых команд. В отличие от графического интерфейса, командная строка предоставляет более гибкие и мощные возможности управления системой.</p>
+            <h3>Запуск командной строки</h3>
+            <p>Командную строку можно запустить на различных операционных системах. На Windows она называется "Командная строка" или "cmd", а на UNIX-подобных системах, таких как Linux и macOS, она известна как "Терминал" или "Консоль". Чтобы открыть командную строку на Windows, можно нажать комбинацию клавиш Win + R, ввести "cmd" и нажать Enter. На UNIX-подобных системах команду для запуска терминала можно найти в меню "Приложения" или использовать сочетание клавиш Ctrl + Alt + T.</p>
+            <h3>Основные команды</h3>
+            <ol>
+                <li>Команда CD</li>
+                <p>Команда "<b>cd</b>" используется для перехода между каталогами. Например, "<b>cd C:\Users</b>" переместит вас в каталог "Users" на диске C:. Если вам нужно вернуться на уровень выше, вы можете использовать команду "cd ..". Команда "cd" без аргументов позволяет вернуться в домашний каталог.</p>
+                <li>Команда <b>DIR</b> (и <b>LS</b> в UNIX-подобных системах)</li>
+                <p>Команда "<b>dir</b>" (или "<b>ls</b>" в UNIX-подобных системах) используется для вывода списка файлов и каталогов в текущем каталоге. Например, "dir" выведет список файлов и каталогов в текущем каталоге.</p>
+                <li>Команда <b>MKDIR</b> (или <b>MD</b> в Windows)</li>
+                <p>Команда "<b>mkdir</b>" (или "<b>md</b>" в Windows) используется для создания нового каталога. Например, "<b>mkdir NewFolder</b>" создаст новый каталог с названием "NewFolder" в текущем каталоге.</p>
+                <li>Команда <b>RM</b> (или <b>DEL</b> в Windows)</li>
+                <p>Команда "<b>rm</b>" (или "<b>del</b>" в Windows) используется для удаления файлов. Например, "<b>rm file.txt</b>" удалит файл с названием "file.txt" из текущего каталога.</p>
+                <li>Команда <b>CP</b> (или <b>COPY</b> в Windows)</li>
+                <p>Команда "<b>cp</b>" (или "<b>copy</b>" в Windows) используется для копирования файлов. Например, "<b>cp file.txt newfile.txt</b>" создаст копию файла "file.txt" и назовет ее "newfile.txt" в текущем каталоге.</p>
+                <li>Команда <b>MV</b> (или <b>MOVE</b> в Windows)</li>
+                <p>Команда "<b>mv</b>" (или "<b>move</b>" в Windows) используется для перемещения или переименования файлов и каталогов. Например, "<b>mv file.txt Documents</b>" переместит файл "file.txt" в каталог "Documents".</p>
+                <li>Команда <b>PWD</b> (или <b>CD</b> в Windows)</li>
+                <p>Команда "<b>pwd</b>" (или "<b>cd</b>" в Windows) используется для вывода текущего каталога. Например, "<b>pwd</b>" выведет полный путь к текущему каталогу.
+                <li>Команда <b>CLEAR</b> (или <b>CLS</b> в Windows)</li>
+                <p>Команда "<b>clear</b>" (или "<b>cls</b>" в Windows) используется для очистки экрана командной строки. Это помогает очистить вывод и улучшить читаемость.</p>
+            </ol>
+            <a href="../linux/theoretical_part4.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+
+      &copy; copyright @ 2024 for <span>iipd</span>
+   
+   </footer>
+   
+   <script src="../js/script.js"></script>
+</body>
+</html>

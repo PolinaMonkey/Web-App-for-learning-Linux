@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Управление файлами и папками</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>В Linux, файлы и папки играют важную роль в организации данных и программ. Умение эффективно управлять файлами и папками является неотъемлемой частью работы в операционной системе Linux. В этой главе мы рассмотрим основные команды и концепции, связанные с управлением файлами и папками в Linux.</p>
+            <h3>Основные команды для работы с файлами и </h3>
+            <p>В Linux существует множество команд для работы с файлами и папками. Вот некоторые из наиболее часто используемых команд:</p>
+            <ul>
+                <li><b>ls</b>: команда ls используется для просмотра содержимого текущей папки. По умолчанию она отображает только имена файлов, но можно использовать различные опции, чтобы отобразить дополнительную информацию, такую как размер файлов или права доступа.</li>
+                <li><b>cd</b>: команда cd используется для изменения текущей папки. Например, "cd Documents" перейдет в папку "Documents", если она существует.</li>
+                <li><b>mkdir</b>: команда mkdir используется для создания новой папки. Например, "mkdir Pictures" создаст новую папку с именем "Pictures".</li>
+                <li><b>touch</b>: команда touch используется для создания нового файла или обновления времени последней модификации существующего файла. Например, "touch example.txt" создаст новый файл с именем "example.txt".</li>
+                <li><b>rm</b>: команда rm используется для удаления файлов и папок. Однако будьте осторожны при использовании этой команды, поскольку она не запрашивает подтверждение перед удалением.</li>
+                <li><b>cp</b>: команда cp используется для копирования файлов и папок. Например, "cp example.txt backup" скопирует файл "example.txt" в папку "backup".</li>
+                <li><b>mv</b>: команда mv используется для перемещения файлов и папок. Она также может быть использована для переименования файлов и папок. Например, "mv example.txt documents" переместит файл "example.txt" в папку "documents".</li>
+            </ul>
+            <h3>Права доступа к файлам и папкам</h3>
+            <p>В Linux каждому файлу и папке назначается определенный набор прав доступа. Эти права определяют, кто может выполнять операции чтения, записи и выполнения с файлом или папкой. Чтение позволяет просматривать содержимое файла или папки, запись позволяет изменять содержимое файла или папки, а выполнение позволяет запускать исполняемые файлы или входить в папку.</p>
+            <p>Права доступа представлены в виде трех символов, которые обозначают права для владельца файла, группы и остальных пользователей. Вот некоторые примеры прав доступа:</p>
+            <ul>
+                <li><b>rwx</b>: права доступа, которые позволяют чтение, запись и выполнение для всех пользователей.</li>
+                <li><b>r--</b>: права доступа, которые позволяют только чтение для всех пользователей.</li>
+                <li><b>rw-</b>: права доступа, которые позволяют чтение и запись для всех пользователей.</li>
+            </ul>
+            <p>Права доступа можно изменить с помощью команды chmod. Например, "chmod +x script.sh" добавит право на выполнение скрипта "script.sh".</p>
+            <h3>Архивация и упаковка файлов и папок</h3>
+            <p>В Linux также существует возможность архивирования и упаковки файлов и папок в один файл для удобства сохранения или передачи. Для этого используются команды tar и gzip.</p>
+            <ul> 
+                <li><b>tar</b>: команда tar используется для архивации файлов и папок. Например, "tar -cf archive.tar directory" создаст архив из папки "directory" в файл с именем "archive.tar".</li>
+                <li><b>gzip</b>: команда gzip используется для сжатия файлов. Например, "gzip file" сжимает файл "file" и создает файл "file.gz".</li>
+            </ul>
+            <p>Комбинируя команды tar и gzip, можно создать архив и сжать его одновременно. Например, "tar -czf archive.tar.gz directory" создаст сжатый архив из папки "directory" в файл с именем "archive.tar.gz".</p>
+            <h3>Работа с удаленными файлами и папками</h3>
+            <p>Linux также предоставляет возможность работы с удаленными файлами и папками по протоколу SSH (Secure Shell). Для этого используются команды scp и sftp.</p>
+            <ul>
+                <li><b>scp</b>: команда scp используется для копирования файлов между локальной машиной и удаленным сервером по протоколу SSH. Например, "scp file.txt user@example.com:/remote/directory" скопирует файл "file.txt" на удаленный сервер в папку "/remote/directory".</li>
+                <li><b>sftp</b>: команда sftp используется для передачи файлов между локальной машиной и удаленным сервером по протоколу SSH. SFTP предоставляет интерактивный интерфейс, где можно выполнить различные операции с файлами и папками. Например, "sftp user@example.com" установит соединение с удаленным сервером и откроет интерактивный интерфейс для работы с удаленными файлами и папками.</li>
+            </ul>
+            <a href="../linux/theoretical_part5.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>

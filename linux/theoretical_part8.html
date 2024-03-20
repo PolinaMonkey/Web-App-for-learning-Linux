@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Управление процессами</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>Управление процессами является одной из основных задач операционной системы Linux. Каждая программа, запущенная на компьютере, представляет собой процесс, который выполняет определенные действия и использует системные ресурсы. В данной главе мы рассмотрим основные концепции и инструменты для управления процессами в Linux.</p>
+            <h3>Понятие процесса</h3>
+            <p>Процесс в Linux - это экземпляр исполняющейся программы, который создается операционной системой. Каждый процесс имеет уникальный идентификатор (PID), состояние (запущен, приостановлен, завершен), родителя (процесс, который создал данный процесс) и дочерние процессы (процессы, созданные данным процессом).</p>
+            <h3>Управление процессами с помощью командной строки</h3>
+            <p>Linux предоставляет различные команды для управления процессами с помощью командной строки. Рассмотрим некоторые из них:</p>
+            <ul>
+                <li><b>ps</b> - команда для просмотра списка активных процессов. Она выводит информацию о PID, состоянии процесса, использовании памяти и других параметрах. Например, ps aux позволяет просматривать информацию о всех процессах на системе.</li>
+                <li><b>top</b> - интерактивная команда для просмотра активных процессов в реальном времени. Она отображает список процессов, которые потребляют наибольшее количество ресурсов (память, процессорное время и прочее).</li>
+                <li><b>kill</b> - команда для отправки сигналов процессам. Например, kill PID посылает сигнал SIGTERM процессу с указанным идентификатором PID для его завершения. Более жесткий вариант - kill -9 PID отправляет сигнал SIGKILL, который немедленно завершает процесс.</li>
+                <li><b>nice</b> - команда для управления приоритетом процесса. Она позволяет изменить значение приоритета (от -20 до 19), которое влияет на то, как операционная система распределяет ресурсы. Чем меньше значение, тем выше приоритет.</li>
+                <li><b>renice</b> - команда для изменения приоритета уже выполняющегося процесса. Например, renice -5 PID снижает приоритет процесса с указанным идентификатором PID.</li>
+            </ul>
+            <h3>Управление процессами с помощью утилиты "<b>systemctl</b>"</h3>
+            <p>systemctl – это основная утилита для управления службами и процессами в Linux. Она управляет системными службами и приложениями, которые запускаются в фоновом режиме и выполняются на протяжении всей работы системы. Рассмотрим некоторые команды:</p>
+            <ul>
+                <li><b>systemctl start service</b> - запускает указанную службу или процесс.</li>
+                <li><b>systemctl stop service</b> - останавливает указанную службу или процесс.</li>
+                <li><b>systemctl restart service</b> - перезапускает указанную службу или процесс.</li>
+                <li><b>systemctl status service</b> - выводит информацию о состоянии указанной службы или процесса.</li>
+                <li><b>systemctl enable service</b> - включает автозапуск указанной службы или процесса при загрузке системы.</li>
+            </ul>
+            <h3>Управление процессами с помощью графического интерфейса</h3>
+            <p>В Linux также существуют графические инструменты для управления процессами. Наиболее распространенные из них:</p>
+            <ul>
+                <li>"<b>System Monitor</b>" - графическое приложение, которое позволяет просматривать список активных процессов, их используемые ресурсы и другую информацию в удобной форме. Оно также позволяет завершать процессы и изменять их приоритет.</li>
+                <li>"<b>htop</b>" - интерактивный монитор процессов в реальном времени с графическим интерфейсом. Он отображает список процессов, используемые ими ресурсы и позволяет выполнять различные действия с процессами.</li>
+            </ul>
+            <a href="../linux/theoretical_part9.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+
+
+
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>

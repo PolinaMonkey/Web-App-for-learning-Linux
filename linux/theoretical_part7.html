@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Настройка сети</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>Операционная система Linux является одной из самых популярных платформ для работы в сфере информационных технологий. Ее гибкость и настройка сети делает Linux незаменимым инструментом для администрирования сетей любого размера и сложности. В этой главе мы рассмотрим основные аспекты настройки сети в Linux, включая настройку LAN, настройку сетевых интерфейсов, маршрутизацию и настройку межсетевых экранов.</p>
+            <h3>Настройка LAN</h3>
+            <p>Настройка локальной сети (Local Area Network, LAN) является неотъемлемой частью работы администратора сети. В Linux для настройки LAN используется протокол TCP/IP, который является основой сети Интернет. Для начала работы необходимо определить IP-адреса для всех узлов в сети. В Linux это можно сделать с помощью команды <b>ifconfig</b>. Пример:</p>
+            <p><b>ifconfig eth0 192.168.1.10 netmask 255.255.255.0</b></p>
+            <p>Эта команда устанавливает IP-адрес 192.168.1.10 и маску подсети 255.255.255.0 для сетевого интерфейса eth0. Это означает, что данный компьютер будет иметь адрес 192.168.1.10 в сети, а все устройства в этой сети будут иметь адреса из диапазона 192.168.1.1-192.168.1.255.</p>
+            <p>Для применения этих настроек необходимо выполнить команду:</p>
+            <p><b>ifconfig eth0 up</b></p>
+            <p>Эта команда активирует сетевой интерфейс eth0.</p>
+            <h3>Настройка сетевых интерфейсов</h3>
+            <p>В Linux существует несколько способов настройки сетевых интерфейсов, включая использование конфигурационного файла и командной строки.</p>
+            <p>Конфигурационный файл /etc/network/interfaces часто используется для настройки сетевых интерфейсов в Linux. В этом файле можно определить параметры сетевых интерфейсов, такие как IP-адрес, маску подсети, шлюз по умолчанию и т. д. Пример секции конфигурационного файла:</p>
+            <ul>
+                <li><b>auto eth0</b></li>
+                <li><b>iface eth0 inet static</b></li>
+                <li><b>address 192.168.1.10</b></li>
+                <li><b>netmask 255.255.255.0</b></li>
+                <li><b>gateway 192.168.1.1</b></li>
+            </ul>
+            <p>Другим способом настройки сетевых интерфейсов являются команды ifconfig и route. Команда ifconfig используется для установки IP-адреса и маски подсети, а команда <b>route</b> используется для добавления маршрутов. Пример:</p>
+            <ul>
+                <li><b>ifconfig eth0 192.168.1.10 netmask 255.255.255.0 up</b></li>
+                <li><b>route add default gw 192.168.1.1</b></li>
+            </ul>
+            <h3>Маршрутизация</h3>
+            <p>Маршрутизация является одним из важных аспектов настройки сети в Linux. Она обеспечивает передачу пакетов данных между разными сетями. В Linux маршрутизация настраивается с помощью команды <b>route</b>. Пример:</p>
+            <p><b>route add -net 192.168.2.0 netmask 255.255.255.0 gw 192.168.1.1</b></p>
+            <p>В этом примере мы добавляем маршрут к сети 192.168.2.0 через шлюз 192.168.1.1 с маской подсети 255.255.255.0.</p>
+            <p>Чтобы указать, что компьютер является маршрутизатором, необходимо активировать опцию IP-маршрутизации в файле /etc/sysctl.conf. Для этого необходимо изменить значение параметра net.ipv4.ip_forward на 1:</p>
+            <p><b>net.ipv4.ip_forward=1</b></p>
+            <p>После внесения изменений необходимо выполнить команду:</p>
+            <p><b>sysctl -p</b></p>
+            <h3>Настройка межсетевых экранов</h3>
+            <p>Межсетевой экран (firewall) является важной частью безопасности сети. Он занимается фильтрацией и контролем трафика, проходящего между различными сетями. В Linux для настройки межсетевых экранов используется программное обеспечение <b>iptables</b>. Пример:</p>
+            <ul>
+                <li><b>iptables -A INPUT -p tcp --dport 22 -j ACCEPT</b></li>
+                <li><b>iptables -A INPUT -p tcp --dport 80 -j ACCEPT</b></li>
+                <li><b>iptables -A INPUT -j DROP</b></li>
+            </ul>
+            <p>В этом примере мы разрешаем входящий трафик на портах 22 (SSH) и 80 (HTTP), а все остальные пакеты будут отбрасываться.</p>
+            <p>Для сохранения настроек в iptables необходимо выполнить команду:</p>
+            <p><b>iptables-save > /etc/iptables/rules.v4</b></p>
+            <p>Конфигурационный файл /etc/iptables/rules.v4 будет использоваться при запуске системы для загрузки настроек iptables.
+                <a href="../linux/theoretical_part8.html" input type="inline-btn" class="btn">Далее</a>
+                <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+                <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+            </div>
+    </div>
+    </section>
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Управление пакетами<br> и обновлениями</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>В мире Linux управление пакетами и обновлениями является одним из важнейших аспектов. Оно позволяет пользователю устанавливать, удалить или обновить программное обеспечение в своей системе. Независимо от дистрибутива Linux, управление пакетами и обновлениями выполняется похожими способами и основывается на использовании пакетных менеджеров.</p>
+            <p>В этой главе мы рассмотрим основные концепции и инструменты управления пакетами и обновлениями в Linux. Мы ознакомимся с пакетными менеджерами, научимся устанавливать, удалить и обновлять программное обеспечение, а также рассмотрим команды, инструкции и рекомендации для оптимального обновления системы.</p>
+            <h3>Пакетные менеджеры</h3>
+            <p>Пакетные менеджеры — это программы, которые отвечают за установку, удаление и обновление пакетов в системе. Они также отслеживают зависимости между пакетами и управляют разрешением конфликтов при установке новых пакетов. Наиболее популярными пакетными менеджерами в Linux являются:</p>
+            <ul>
+                <li><b>APT</b> (Advanced Packaging Tool) в Debian и Ubuntu</li>
+                <li><b>YUM</b> (Yellowdog Updater, Modified) в CentOS и Fedora</li>
+                <li><b>Pacman</b> в Arch Linux</li>
+                <li><b>Zypper</b> в openSUSE</li>
+            </ul>
+            <p>Каждый пакетный менеджер имеет свои особенности, синтаксис команд и файлы конфигурации, но основные концепции и способы работы с ними обычно переносимы между дистрибутивами.</p>
+            <h3>Установка пакетов</h3>
+            <p>Установка пакетов — это процесс добавления нового программного обеспечения в систему. Пакетный менеджер позволяет пользователю легко найти и установить необходимые пакеты из официальных репозиториев дистрибутива. Для установки пакета воспользуйтесь командой install с указанием имени пакета:</p>
+            <ul>
+                <li><b>sudo apt install package_name</b> – для APT в Debian и Ubuntu</li>
+                <li><b>sudo yum install package_name</b> – для YUM в CentOS и Fedora</li>
+                <li><b>sudo pacman -S package_name</b> – для Pacman в Arch Linux</li>
+                <li><b>sudo zypper install package_name</b> – для Zypper в openSUSE</li>
+            </ul>
+            <h3>Удаление пакетов</h3>
+            <p>Удаление пакетов — это процесс удаления программного обеспечения из системы. Пакетный менеджер позволяет пользователю удалить пакет и все связанные с ним файлы. Для удаления пакета воспользуйтесь командой remove с указанием имени пакета:</p>
+            <ul>
+                <li><b>sudo apt remove package_name</b> – для APT в Debian и Ubuntu</li>
+                <li><b>sudo yum remove package_name</b> – для YUM в CentOS и Fedora</li>
+                <li><b>sudo pacman -R package_name</b> – для Pacman в Arch Linux</li>
+                <li><b>sudo zypper remove package_name</b> – для Zypper в openSUSE</li>
+            </ul>
+            <h3>Обновление пакетов</h3>
+            <p>Обновление пакетов — это процесс получения и установки новых версий программного обеспечения в систему. Пакетный менеджер отслеживает доступные обновления в официальных репозиториях и предоставляет пользователю возможность обновить пакеты. Для обновления всех пакетов воспользуйтесь командой update:</p>
+            <ul>
+                <li><b>sudo apt update</b> – для APT в Debian и Ubuntu</li>
+                <li><b>sudo yum update</b> – для YUM в CentOS и Fedora</li>
+                <li><b>sudo pacman -Syu</b> – для Pacman в Arch Linux</li>
+                <li><b>sudo zypper update</b> – для Zypper в openSUSE</li>
+            </ul>
+            <h3>Обновление системы</h3>
+            <p>Обновление системы — это процесс обновления ядра Linux, системных библиотек и других компонентов операционной системы. В отличие от обновления пакетов при обновлении системы может потребоваться перезагрузка. Для обновления системы воспользуйтесь командой dist-upgrade:</p>
+            <ul>
+                <li><b>sudo apt dist-upgrade</b> – для APT в Debian и Ubuntu</li>
+                <li><b>sudo yum update --obsoletes</b> – для YUM в CentOS и Fedora</li>
+                <li><b>sudo pacman -Syu</b> – для Pacman в Arch Linux</li>
+                <li><b>sudo zypper dup</b> – для Zypper в openSUSE</li>
+            </ul>
+            <h3>Зависимости пакетов</h3>
+            <p>Зависимости пакетов — это отношения между пакетами, которые требуют наличия других пакетов для своей работы. Пакетные менеджеры отслеживают зависимости и автоматически устанавливают необходимые пакеты при установке или обновлении. Это позволяет вам быть уверенными в том, что установленные пакеты имеют все необходимые компоненты для работы.</p>
+            <h3>Репозитории</h3>
+            <p>Репозитории — это серверы, содержащие пакеты и обновления для вашей операционной системы. Пакетные менеджеры обращаются к репозиториям для загрузки и обновления пакетов. Управление репозиториями позволяет вам добавлять новые источники пакетов и настраивать приоритет загрузки.</p>
+            <h3>Ключи безопасности</h3>
+            <p>Ключи безопасности — это цифровые подписи, которые обеспечивают подлинность пакетов и идентификацию источников. Ключи безопасности используются для проверки целостности и подлинности пакетов при загрузке из репозиториев. При установке пакетного менеджера в систему обычно добавляются ключи безопасности, чтобы обеспечить безопасность устанавливаемого программного обеспечения.</p>
+            <h3>Автоматические обновления</h3>
+            <p>Автоматические обновления — это процесс автоматической загрузки и установки обновлений пакетов и системы без вмешательства пользователя. В Linux вы можете настроить автоматические обновления для повышения безопасности и поддержки актуального программного обеспечения.</p>
+            <a href="../linux/theoretical_part12.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+
+
+
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>

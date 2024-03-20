@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Автоматизация задач <br>с помощью сценариев</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>Автоматизация задач – это важная часть работы системного администратора в Linux. Она позволяет сократить время и усилия, затрачиваемые на рутинные и повторяющиеся задачи, а также обеспечивает более эффективное управление системой. В этой главе мы рассмотрим, как автоматизировать задачи с помощью сценариев (скриптов) в Linux.</p>
+            <h3>Базовое понимание сценариев</h3>
+            <p>Сценарий (скрипт) – это файл, содержащий последовательность команд, которые могут быть выполнены автоматически. Сценарии позволяют объединить несколько команд в одну последовательность или создать условные конструкции и циклы для выполнения задач. Сценарии пишутся на специальном языке скриптования, таком как Bash (Bourne Again SHell).</p>
+            <h3>Создание и запуск сценариев</h3>
+            <p>В Linux создание и запуск сценариев осуществляется следующими шагами:</p>
+            <ol>
+                <li>Создайте новый файл с расширением .sh, например, script.sh.</li>
+                <li>Откройте файл в текстовом редакторе и напишите необходимые команды.</li>
+                <li>Сохраните и закройте файл.</li>
+                <li>Установите права на выполнение сценария с помощью команды chmod +x script.sh.</li>
+                <li>Запустите сценарий с помощью команды ./script.sh.</li>
+            </ol>
+            <h3>Основные команды в сценариях:</h3>
+            <p>Сценарии в Linux могут содержать различные команды, которые выполняют различные задачи. Рассмотрим некоторые из них:</p>
+            <ul>
+                <li><b>echo</b> - команда для вывода на экран текста или значения переменных. Например, echo "Hello, World!" выведет на экран строку "Hello, World!"</li>
+                <li><b>cd</b> - команда для изменения текущего рабочего каталога. Например, cd /home/user перейдет в каталог /home/user</li>
+                <li><b>ls</b> - команда для вывода списка файлов и каталогов в текущем каталоге. Например, ls -l выведет список файлов в длинном формате.</li>
+                <li><b>mkdir</b> - команда для создания нового каталога. Например, mkdir backup создаст новый каталог с именем backup</li>
+                <li><b>cp</b> - команда для копирования файлов и каталогов. Например, cp file1.txt file2.txt скопирует файл file1.txt в файл file2.txt</li>
+                <li><b>mv</b> - команда для перемещения или переименования файлов и каталогов. Например, mv file.txt /home/user переместит файл file.txt в каталог /home/user</li>
+                <li><b>rm</b> - команда для удаления файлов и каталогов. Например, rm file.txt удалит файл file.txt</li>
+            </ul>
+            <h3>Переменные и условные конструкции</h3>
+            <p>Сценарии могут использовать переменные для хранения значения и использования его в дальнейшем коде. Например, name="John" задает переменную name со значением "John". Для использования переменной в командах используется символ $, например, echo "My name is $name" выведет на экран строку "My name is John".</p>
+            <p>Сценарии также позволяют использовать условные конструкции для выполнения различных действий в зависимости от условий. Например, </p>
+            <p><b>if [ $name = "John" ]; then echo "Hello, John";</b></p>
+            <p>fi выполнит команду echo только при условии, что значение переменной name равно "John". "<b>fi</b>" - это ключевое слово в условной конструкции "if" в скриптах на языке Bash (Bourne Again SHell) в Linux. "fi" является завершающим ключевым словом, которое обозначает конец блока кода, выполняемого в случае истинности условия.</p>
+            <h3>Автоматическое выполнение сценариев:</h3>
+            <p>Сценарии могут быть автоматически выполнены определенными событиями или по расписанию с помощью инструментов и служб в Linux. Рассмотрим некоторые из них:</p>
+            <ul>
+                <li><b>cron</b> - служба, которая выполняет заданные сценарии по расписанию. С помощью команды crontab можно настроить выполнение сценариев на определенное время и дни недели.</li>
+                <li><b>systemd</b> - инструмент, который позволяет создавать и управлять службами, включая автоматическое выполнение сценариев при запуске системы или при определенных событиях.</li>
+                <li><b>События ядра</b> - Linux может генерировать различные события ядра, такие как подключение устройств, сетевые события и другие. Сценарии могут быть выполнены автоматически при возникновении этих событий.</li>
+            </ul>
+            <a href="../linux/theoretical_part10.html" input type="inline-btn" class="btn">Далее</a>
+            <a href="../linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+            <a href="../linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+        </div>
+    </div>
+    </section>
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Learning</title>
+    
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+
+   <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+    
+       <section class="flex">
+    
+        <div class="name">
+            <h3>Настройка и администрирование<br> сетевых сервисов</h3>
+        </div>
+
+          <form action="../search.html" method="post" class="search-form">
+             <input type="text" name="search_box" required placeholder="поиск" maxlength="100">
+             <button type="submit" class="fas fa-search"></button>
+          </form>
+    
+          <div class="icons">
+             <div id="toggle-btn" class="fas fa-moon"></div>
+             <div id="menu-btn" class="fas fa-list"></div>
+             <div id="search-btn" class="fas fa-search"></div>
+          </div>
+          
+       </section>
+    
+    </header>  
+ 
+    <div class="side-bar">
+ 
+        <div id="close-btn">
+            <i class="fas fa-times"></i>
+        </div>
+ 
+    <div class="profile">
+       <img src="../images/pic-9.jpg" class="image" alt="">
+       <h3 class="name">имя</h3>
+       <a href="../profile.html" class="btn">профиль</a>
+    </div>
+ 
+    <nav class="navbar">
+        <a href="../linux/theoretical_part1.html"><i class="fas fa-arrow-right"></i><span>Введение в Linux</span></a>
+        <a href="../linux/theoretical_part2.html"><i class="fas fa-arrow-right"></i><span>Установка и настройка</span></a>
+        <a href="../linux/theoretical_part3.html"><i class="fas fa-arrow-right"></i><span>Командная строка и основные команды</span></a>
+        <a href="../linux/theoretical_part4.html"><i class="fas fa-arrow-right"></i><span>Управление файлами и папками</span></a>
+        <a href="../linux/theoretical_part5.html"><i class="fas fa-arrow-right"></i><span>Управление пользователями и правами доступа</span></a>
+        <a href="../linux/theoretical_part6.html"><i class="fas fa-arrow-right"></i><span>Установка и удаление программ</span></a>
+        <a href="../linux/theoretical_part7.html"><i class="fas fa-arrow-right"></i><span>Настройка сети</span></a>
+        <a href="../linux/theoretical_part8.html"><i class="fas fa-arrow-right"></i><span>Управление процессами</span></a>
+        <a href="../linux/theoretical_part9.html"><i class="fas fa-arrow-right"></i><span>Автоматизация задач с помощью сценариев</span></a>
+        <a href="../linux/theoretical_part10.html"><i class="fas fa-arrow-right"></i><span>Настройка безопасности</span></a>
+        <a href="../linux/theoretical_part11.html"><i class="fas fa-arrow-right"></i><span>Управление пакетами и обновлениями</span></a>
+        <a href="../linux/theoretical_part12.html"><i class="fas fa-arrow-right"></i><span>Конфигурация и настройка серверных служб</span></a>
+        <a href="../linux/theoretical_part13.html"><i class="fas fa-arrow-right"></i><span>Работа с базами данных</span></a>
+        <a href="../linux/theoretical_part14.html"><i class="fas fa-arrow-right"></i><span>Настройка и администрирование сетевых сервисов</span></a>
+        <a href="../linux/theoretical_part15.html"><i class="fas fa-arrow-right"></i><span>Оптимизация и отладка системы</span></a>
+        <a href="../linux/theoretical_part16.html"><i class="fas fa-arrow-right"></i><span>Резервное копирование и восстановление данных</span></a>
+        <a href="../linux/theoretical_part17.html"><i class="fas fa-arrow-right"></i><span>Создание и настройка виртуальных машин</span></a>
+        <a href="../linux/theoretical_part18.html"><i class="fas fa-arrow-right"></i><span>Введение в программирование под Linux</span></a>
+        <a href="../linux/theoretical_part19.html"><i class="fas fa-arrow-right"></i><span>Настройка и использование графического интерфейса</span></a>
+        <a href="../linux/theoretical_part20.html"><i class="fas fa-arrow-right"></i><span>Работа с облаком и виртуализацией</span></a>
+     </nav>
+     
+     </div>
+    
+     <section class="theory">
+        <div class="row">
+          <div class="content">
+            <p>Компьютерные сети играют важную роль в современном мире, и операционная система Linux имеет широкий набор инструментов для настройки и администрирования сетевых сервисов. В этой главе мы рассмотрим основные аспекты работы с сетевыми сервисами в Linux.</p>
+            <h3>Основы сетевых сервисов</h3>
+            <p>Сетевые сервисы представляют собой программные приложения, которые предоставляют функциональность для работы в сети. Они могут включать в себя сервера для хранения и обмена файлами, сервера электронной почты, веб-серверы, сервисы DNS, DHCP и многие другие.</p>
+            <p>Linux предлагает различные программы и пакеты для настройки и администрирования сетевых сервисов, такие как:</p>
+            <ul>
+                <li><b>Apache</b> - один из самых популярных веб-серверов, который позволяет размещать веб-сайты и обрабатывать HTTP-запросы.</li>
+                <li><b>OpenSSH</b> - сервер для безопасного удаленного доступа и передачи файлов по протоколу SSH.</li>
+                <li><b>Postfix</b> - почтовый сервер, который обрабатывает и доставляет электронную почту.</li>
+                <li><b>BIND</b> - сервер DNS, который обеспечивает разрешение доменных имен в IP-адреса.</li>
+                <li><b>ISC DHCP</b> - сервер DHCP, который автоматически назначает IP-адреса и другие сетевые настройки устройствам в сети.</li>
+            </ul>
+            <h3>Файлы конфигурации сетевых сервисов</h3>
+            <p>Сетевые сервисы в Linux обычно настраиваются через файлы конфигурации. Каждый сервис имеет свой собственный файл конфигурации, который определяет параметры и настройки сервиса.</p>
+            <p>Наиболее распространенные файлы конфигурации в Linux включают:</p>
+            <ul>
+                <li><b>/etc/apache2/apache2.conf</b> - файл конфигурации для веб-сервера Apache.</li>
+                <li><b>/etc/ssh/sshd_config</b> - файл конфигурации для сервера SSH.</li>
+                <li><b>/etc/postfix/main.cf</b> - файл конфигурации для почтового сервера Postfix.</li>
+                <li><b>/etc/bind/named.conf</b> - файл конфигурации для сервера DNS BIND.</li>
+                <li><b>/etc/dhcp/dhcpd.conf</b> - файл конфигурации для сервера DHCP ISC.</li>
+            </ul>
+                <h3>Управление сетевыми сервисами</h3>
+                <p>Управление и администрирование сетевыми сервисами в Linux может быть выполнено через командную строку или графический интерфейс.</p>
+                <p>Некоторые из основных команд для работы с сетевыми сервисами в Linux включают:</p>
+                <ul>
+                    <li><b>service <service_name> start|stop|restart</b> - запуск, остановка или перезапуск сервиса.</li>
+                    <li><b>systemctl start|stop|restart <service_name></b> - аналогичные команды для использования с systemd.</li>
+                    <li><b>netstat -tuln</b> - просмотр активных соединений и слушающих портов на компьютере.</li>
+                    <li><b>les</b> - настройка правил фильтрации пакетов и межсетевого экрана.</li>
+                    <li><b>fail2ban</b> - инструмент для обнаружения и блокировки атак на сетевые сервисы.</li>
+                </ul>
+                <h3>Безопасность сетевых сервисов</h3>
+                <p>Безопасность является критическим аспектом работы с сетевыми сервисами. В Linux есть несколько основных методов защиты сетевых сервисов:</p>
+                <p>Правильная настройка файервола: использование iptables или других межсетевых экранов для фильтрации пакетов и разрешения доступа только к нужным портам и сервисам.</p>
+                <p>Обновление программного обеспечения: регулярное обновление операционной системы и установленных пакетов для получения последних исправлений уязвимостей безопасности.</p>
+                <p>Использование шифрования: настройка поддержки протокола SSL/TLS для защищенного соединения с сетевыми сервисами, такими как веб-серверы и почтовые серверы.</p>
+                <p>Некоторые из практических примеров использования и администрирования сетевых сервисов в Linux включают:</p>
+                <ol>
+                    <li>Настройка web-сервера Apache для размещения веб-сайта.</li>
+                    <li>Создание и настройка почтового сервера Postfix для отправки и получения электронной почты.</li>
+                    <li>Настройка и администрирование сервера DNS BIND для разрешения доменных имен.</li>
+                    <li>Конфигурирование сервера SSH для безопасного удаленного доступа к серверу.</li>
+                </ol>
+                <a href="linux/theoretical_part15.html" input type="inline-btn" class="btn">Далее</a>
+                <a href="linux/practical.html" input type="inline-btn" class="btn">Перейти к практическим задачам</a>
+                <a href="linux/tests.html" input type="inline-btn" class="btn">Тестирование</a>
+            </div>
+    </div>
+    </section>
+
+
+
+    <footer class="footer">
+
+        &copy; copyright @ 2024 for <span>iipd</span>
+     
+     </footer>
+     
+     <script src="../js/script.js"></script>
+</body>
+</html>
